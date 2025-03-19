@@ -1,0 +1,59 @@
+<!-- HTML/menu.html -->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meny</title>
+  <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body class="page-menu">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Hem</a></li>
+        <li><a href="menu.html">Meny</a></li>
+        <li><a href="lunch.html">Lunchbuffé</a></li>
+        <li><a href="price.html">Prislista</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Vår meny</h1>
+
+    <div class="filter-controls">
+        <button class="filter-btn" data-category="all">Visa alla</button>
+        <button class="filter-btn" data-category="starters">Förrätter</button>
+        <button class="filter-btn" data-category="mains">Varmrätter</button>
+        <button class="filter-btn" data-category="desserts">Efterrätter</button>
+      </div>
+
+    <section class="menu-category">
+      <h2>Förrätter</h2>
+      <ul>
+        <li>Bruschetta — 79 kr</li>
+        <li>Räksallad — 89 kr</li>
+      </ul>
+    </section>
+
+    <section class="menu-category">
+      <h2>Varmrätter</h2>
+      <ul>
+        <li>Grillad lax — 149 kr</li>
+        <li>Oxfilé med rödvinssås — 199 kr</li>
+      </ul>
+    </section>
+
+    <section class="menu-category">
+      <h2>Efterrätter</h2>
+      <ul>
+        <li>Chokladfondant — 89 kr</li>
+        <li>Pannacotta — 79 kr</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

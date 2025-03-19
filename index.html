@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurang</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="HTML/menu.html">Meny</a></li>
+                    <li><a href="HTML/lunch.html">Lunchbuffé</a></li>
+                    <li><a href="HTML/price.html">Prislista</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h1>Välkommen till Restaurang</h1>
+          
+              
+            <p>Upplev en gastronomisk resa genom vår unika matfilosofi.</p>
+        </section>
+        
+        <section id="menu">
+            <h2>Vår meny</h2>
+            <div class="grid-container">
+                <div class="menu-category" id="starters">
+                    <h3>Förrätter</h3>
+                    <p>Beskrivning av förrätter.</p>
+                </div>
+                <div class="menu-category" id="mains">
+                    <h3>Varmrätter</h3>
+                    <p>Beskrivning av varmrätter.</p>
+                </div>
+                <div class="menu-category" id="desserts">
+                    <h3>Efterrätter</h3>
+                    <p>Beskrivning av efterrätter.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="lunch">
+            <h2>Lunchbuffé</h2>
+            <button id="toggle-lunch">Visa mer</button>
+            <div id="lunch-info" class="hidden">
+                <p>Serveras måndag-fredag med dagliga specialerbjudanden.</p>
+            </div>
+        </section>
+        
+        <section id="pricing">
+            <h2>Prislista</h2>
+            <p>Här kommer priser och allergiinformation.</p>
+        </section>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
