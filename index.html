@@ -11,7 +11,7 @@
         <nav>
             <ul>
                 <ul>
-                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="index.html" class="nav-link active">Hem</a></li>
                     <li><a href="HTML/menu.html">Meny</a></li>
                     <li><a href="HTML/lunch.html">Lunchbuffé</a></li>
                     <li><a href="HTML/price.html">Prislista</a></li>
@@ -19,46 +19,47 @@
             </ul>
         </nav>
     </header>
-    
+
+    <section id="home">
+        <h1>Välkommen till Havsverandan</h1>
+        <p>Beläget vid den vackra kusten, är Havsverandan en plats där havets friskhet möter lokala traditioner. <br>
+             Vår meny, baserad på säsongens bästa råvaror, kombinerar klassiska tekniker med moderna influenser. <br>
+             Varje rätt är skapad med passion och berättar en historia om vår kustnära livsstil. <br>
+             Välkommen att uppleva en unik gastronomisk resa där enkelhet och äkthet står i centrum.</p>
+    </section>
+   
     <main>
-        <section id="home">
-            <h1>Välkommen till Restaurang</h1>
-          
-              
-            <p>Upplev en gastronomisk resa genom vår unika matfilosofi.</p>
+        <!-- Meny‑preview -->
+        <section class="section">
+          <img src="images/nabo-matbar-din-goda.jpg" alt="Meny">
+          <div class="content">
+            <h2>Utforska vår meny</h2>
+            <p>Klicka för att se alla rätter och priser.</p>
+            <a href="HTML/menu.html" class="btn">Se menyn</a>
+          </div>
         </section>
-        
-        <section id="menu">
-            <h2>Vår meny</h2>
-            <div class="grid-container">
-                <div class="menu-category" id="starters">
-                    <h3>Förrätter</h3>
-                    <p>Beskrivning av förrätter.</p>
-                </div>
-                <div class="menu-category" id="mains">
-                    <h3>Varmrätter</h3>
-                    <p>Beskrivning av varmrätter.</p>
-                </div>
-                <div class="menu-category" id="desserts">
-                    <h3>Efterrätter</h3>
-                    <p>Beskrivning av efterrätter.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="lunch">
+      
+        <!-- Lunchbuffé‑preview (bild till höger) -->
+        <section class="section reverse">
+          <img src="images/restaurangen-serverar.jpg" alt="Lunchbuffé">
+          <div class="content">
             <h2>Lunchbuffé</h2>
-            <button id="toggle-lunch">Visa mer</button>
-            <div id="lunch-info" class="hidden">
-                <p>Serveras måndag-fredag med dagliga specialerbjudanden.</p>
-            </div>
+            <p>Vår populära buffé serveras måndag–fredag.</p>
+            <a href="HTML/lunch.html" class="btn">Mer info</a>
+          </div>
         </section>
-        
-        <section id="pricing">
+      
+        <!-- Prislista‑preview -->
+        <section class="section">
+          <img src="images/table-5356682_1280.jpg" alt="Prislista">
+          <div class="content">
             <h2>Prislista</h2>
-            <p>Här kommer priser och allergiinformation.</p>
+            <p>Se priser och allergener för alla rätter.</p>
+            <a href="HTML/price.html" class="btn">Prislista</a>
+          </div>
         </section>
-    </main>
+      </main>
+      
     
     <script src="js/script.js"></script>
 </body>

@@ -6,15 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prislista</title>
   <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" >
 </head>
-<body>
+<body class="price-page">
   <header>
     <nav>
       <ul>
         <li><a href="../index.html">Hem</a></li>
         <li><a href="menu.html">Meny</a></li>
         <li><a href="lunch.html">Lunchbuffé</a></li>
-        <li><a href="price.html">Prislista</a></li>
+        <li><a href="price.html" class="nav-link active">Prislista</a></li>
       </ul>
     </nav>
   </header>
@@ -23,7 +26,7 @@
     <h1>Prislista</h1>
     <div class="table-container">
       <table>
-        <thead>
+        <thead id="table-head">
           <tr>
             <th>Rätt</th>
             <th>Pris</th>
@@ -32,19 +35,71 @@
         </thead>
         <tbody>
           <tr>
-            <td>Förrätt 1</td>
-            <td>89 kr</td>
-            <td>Gluten, laktos</td>
+            <th colspan="3">Förrätter</th>
           </tr>
           <tr>
-            <td>Varmrätt 1</td>
-            <td>149 kr</td>
-            <td>Inga</td>
+            <td>TOMATTARTAR OCH KRONÄRTSKOCKA</td>
+            <td>155 kr</td>
+            <td>Nötter, Gluten, Laktos</td>
           </tr>
           <tr>
-            <td>Efterrätt 1</td>
-            <td>79 kr</td>
+            <td>KARAMELLISERAD HAMACHI</td>
+            <td>185 kr</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>RÅMARINERAD OXFLAPSTEAK</td>
+            <td>155 kr</td>
+            <td>Gluten</td>
+          </tr>
+          <tr>
+            <td>HALSTRAD PILGRIMSMUSSLA </td>
+            <td>195 kr</td>
+            <td>Ägg, Laktos</td>
+          </tr>
+
+          <tr>
+            <th colspan="3">Huvudrätter</th>
+          </tr>
+
+          <tr>
+            <td>GRILLAD IBERICO SECRETO</td>
+            <td>255 kr</td>
+            <td>Laktos</td>
+          </tr>
+          <tr>
+            <td>ANKA FRITES</td>
+            <td>375 kr</td>
             <td>Nötter</td>
+          </tr>
+          <tr>
+            <td>UMI ENTRECÔTE</td>
+            <td>395 kr</td>
+            <td>Laktos, Ägg</td>
+          </tr>
+          <tr>
+            <td>SKREITORSK</td>
+            <td>245 kr</td>
+            <td>Laktos</td>
+          </tr>
+
+          <tr>
+            <th colspan="3">Efterrätter</th>
+          </tr>
+          <tr>
+            <td>RABARBER</td>
+            <td>79 kr</td>
+            <td>Nötter, Gluten</td>
+          </tr>
+          <tr>
+            <td>MANGO & KOKOS</td>
+            <td>140 kr</td>
+            <td>Gluten, Laktos</td>
+          </tr>
+          <tr>
+            <td>HUSETS CHOKLADTRYFFEL</td>
+            <td>45 kr</td>
+            <td>Laktos</td>
           </tr>
         </tbody>
       </table>

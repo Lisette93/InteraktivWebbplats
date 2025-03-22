@@ -6,27 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lunchbuffé</title>
   <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" >
 </head>
-<body class="page-lunch">
+<body class="lunch-page">
   <header>
     <nav>
       <ul>
         <li><a href="../index.html">Hem</a></li>
         <li><a href="menu.html">Meny</a></li>
-        <li><a href="lunch.html">Lunchbuffé</a></li>
+        <li><a href="lunch.html" class="nav-link active">Lunchbuffé</a></li>
         <li><a href="price.html">Prislista</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+    <article class="lunch-buffet">
     <h1>Lunchbuffé</h1>
-    <button id="toggle-lunch">Visa/Dölj information</button>
+    <button id="showHideInfo">Info om lunchbuffén</button>
     <div id="lunch-info" class="hidden">
-      <p>Vår lunchbuffé serveras måndag–fredag mellan 11:00 och 14:00.</p>
-      <p>Dagens special: [Lägg till dagens rätt här]</p>
-      <p>Pris: 129 kr inklusive dryck.</p>
+      <p>Vår lunchbuffé serveras måndag–fredag mellan 11:00 och 14:00. <br>
+        Varje dag erbjuder vi en ny variation, noggrant framtagen av vår kock.</p>
+      
+
+      <p><strong>Dagens special:</strong><br>
+      Rimmad lax, hovmästarsås, dillstuvad potatis </p>
+      <p><strong>Pris:</strong> 159 kr (inklusive dryck)</p>
+
+      <h3>Tillägg och dryckesalternativ</h3>
+      <p>Välj gärna något extra:</p>
+
+    <ul>
+      <li>Extra sallad – 15 kr</li>
+      <li>Dessertalternativ – 30 kr</li>
+    </ul>
+
+    <p>Drycker:</p>
+    <ul>
+      <li>Vatten (inkluderat)</li>
+      <li>Saft – 20 kr</li>
+      <li>Kaffe/te – 25 kr</li>
+    </ul>
     </div>
+    </article>
+
+   
+      
   </main>
 
   <script src="../js/script.js" defer></script>

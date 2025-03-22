@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meny</title>
   <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" >
 </head>
-<body class="page-menu">
+<body class="menu-page">
   <header>
     <nav>
       <ul>
         <li><a href="../index.html">Hem</a></li>
-        <li><a href="menu.html">Meny</a></li>
+        <li><a href="menu.html"class="nav-link active">Meny</a></li>
         <li><a href="lunch.html">Lunchbuffé</a></li>
         <li><a href="price.html">Prislista</a></li>
       </ul>
@@ -25,34 +28,123 @@
     <div class="filter-controls">
         <button class="filter-btn" data-category="all">Visa alla</button>
         <button class="filter-btn" data-category="starters">Förrätter</button>
-        <button class="filter-btn" data-category="mains">Varmrätter</button>
+        <button class="filter-btn" data-category="mains">Huvudrätter</button>
         <button class="filter-btn" data-category="desserts">Efterrätter</button>
       </div>
 
-    <section class="menu-category">
+   <section class="menu-category" id="starters">
       <h2>Förrätter</h2>
       <ul>
-        <li>Bruschetta — 79 kr</li>
-        <li>Räksallad — 89 kr</li>
+
+        <li class="menu-item" >
+        <article>
+        <input type="checkbox" id="dish1" data-price="155">
+        <label for="dish1"><strong> TOMATTARTAR OCH KRONÄRTSKOCKA / 155</strong></label>
+        <p>Rökt tomatvinägrett, rostade pinjenötter, stracciatella burrata, friterad salvia, levainsmulor, hackade svarta oliver (veg)</p>
+        </li>
+        </article>
+
+
+          <li class="menu-item">
+          <article>
+          <input type="checkbox" id="dish2" data-price="185">
+          <label for="dish2"><strong> KARAMELLISERAD HAMACHI / 185</strong></label>
+          <p>Pomelo, forellrom, krispig lök, rädisa, wasabidashi, yuzu, sakeemulsion</p>
+          </li>
+          </article>
+
+          <li class="menu-item">
+          <article>
+          <input type="checkbox" id="dish3" data-price="155">
+          <label for="dish3"><strong> RÅMARINERAD OXFLAPSTEAK / 155</strong></label>
+          <p>Confiterad jordärtskocka, sötsyrlig gulbeta, ramslöksemulsion, ramslökskapris, chips på beta, tryffelpeccorino</p>
+          </li>
+          </article>
+
+          <li class="menu-item">
+          <article>
+          <input type="checkbox" id="dish4" data-price="195">
+          <label for="dish4"><strong> HALSTRAD PILGRIMSMUSSLA / 195</strong></label>
+          <p>Nässelsoppa, rökt gräddfil, spritärta i nässla, bakat vaktelägg, citronconfit, levaincrisp</p>
+          </li>
+          </article>
+        
       </ul>
     </section>
 
-    <section class="menu-category">
+    <section class="menu-category" id="mains">
       <h2>Varmrätter</h2>
       <ul>
-        <li>Grillad lax — 149 kr</li>
-        <li>Oxfilé med rödvinssås — 199 kr</li>
-      </ul>
-    </section>
 
-    <section class="menu-category">
+          <li class="menu-item">
+          <article>
+          <input type="checkbox" id="dish5" data-price="255">
+          <label for="dish5"><strong> GRILLAD IBERICO SECRETO / 255</strong></label>
+          <p>Rökt potatispuré, frästa shimejisvampar, chiliheta äpplen, vinkokt fänkål, smörad äpplesky, parmesanflarn</p>
+          </li>
+          </article>
+
+          <li class="menu-item">
+          <article>
+          <input type="checkbox" id="dish6" data-price="375">
+          <label for="dish6"><strong> ANKA FRITES / 375</strong></label>
+          <p>Ankbröst från Rouigie, dijondressad side sallad, pommes frites, tryffeltoppad smörsås</p>
+          </li>
+          </article>
+
+          <li class="menu-item">
+          <article>
+          <input type="checkbox" id="dish7" data-price="395">
+          <label for="dish7"><strong> UMI ENTRECÔTE FÖR TVÅ / 395</strong></label>
+          <p>Picklad tomat, grillad grön sparris, ramslök, pommes frites, sky, tryffelbearnaise</p>
+          </li>
+          </article>
+
+          <li class="menu-item">
+          <article>
+          <input type="checkbox" id="dish8" data-price="245">
+          <label for="dish8"><strong> SKREITORSK / 245</strong></label>
+          <p>Beurre blanc på rostat kräftsmör, bakade tomater, friterad blomkål, grillad fioretto, basilikaskott
+          </p>
+          </li>
+          </article>
+
+    </ul>
+  </section>
+
+  <section class="menu-category" id="desserts">
       <h2>Efterrätter</h2>
       <ul>
-        <li>Chokladfondant — 89 kr</li>
-        <li>Pannacotta — 79 kr</li>
+
+        <li class="menu-item">
+        <article>
+        <input type="checkbox" id="dish9" data-price="135">
+        <label for="dish9"><strong> RABARBER / 135</strong></label>
+        <p>Brûléeskum, bakade rabarber, mandel- och brynt smörsavarin, citron, pistage, citronverbena, rabarber, yoghurtsorbet</p>
+        </li>
+        </article>
+
+        <li class="menu-item">
+
+        <article>
+        <input type="checkbox" id="dish10" data-price="140">
+        <label for="dish10"><strong> MANGO & KOKOS / 140</strong></label>
+        <p>Mangoconfit, mörk chokladpannacotta, rostad kokoskaka, mörk romsyrup, chokladjord, kokossorbet</p>
+        </li>
+        </article>
+
+        <li class="menu-item">
+        <article>
+        <input type="checkbox" id="dish11" data-price="45">
+        <label for="dish11"><strong> HUSETS CHOKLADTRYFFEL / 45</strong></label>
+        </li>
+        </article>
+
       </ul>
-    </section>
-  </main>
+  </section>
+
+  <p id="total-price">Total pris: 0kr</p>
+</main>
 
   <script src="../js/script.js"></script>
 </body>

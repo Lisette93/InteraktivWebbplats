@@ -1,248 +1,284 @@
+/* RESET & ROOT */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* ROOT VARIABLES */
-  :root {
-    --primary-color: #333;
-    --accent-color: #fff;
-    --bg-overlay: rgba(0, 0, 0, 0.5);
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Open Sans', sans-serif;
-  }
-  
-  /* GLOBAL STYLES */
-  body {
-    font-family: var(--font-body);
-    line-height: 1.6;
-    color: var(--primary-color);
-  }
-  
-  img {
-    max-width: 100%;
-    display: block;
-  }
-  
-  /* NAVBAR */
-  header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background: rgba(255,255,255,0.8);
-    backdrop-filter: blur(10px);
-    z-index: 100;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: 600;
-    margin: 0 1.5rem;
-    transition: color 0.2s;
-  }
-  
-  nav a:hover {
-    color: var(--accent-color);
-  }
-  
-  /* HERO SECTION */
-  #home {
-    height: 100vh;
-    background: url('../images/slide3-banner.jpg') center/cover no-repeat;
-    display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #333;
+  --accent-color: #fff;
+  --bg-overlay: rgba(0, 0, 0, 0.2);
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+/* GLOBAL */
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--primary-color);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin: 0 1.5rem;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+.nav-link.active {
+  color: var(--accent-color);
+}
+
+/* HERO */
+#home {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  height: 100vh;
+  background: url('../images/slide3-banner.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap:20rem;
+  color: var(--accent-color);
+}
+
+#home::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--bg-overlay);
+}
+
+#home h1 {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  z-index: 1;
+}
+
+#home p {
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+/* SPLIT SECTION (preview blocks) */
+.section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.section img {
+  width: 75%;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.section .content {
+  width: 50%;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-color);
+  color: var(--accent-color);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* GENERIC MAIN */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* MENU PAGE */
+
+.menu-page {
+  /* background-image: url('../images/d4c5a0f53a97aaf0ada1f42b2937208c_1710496999.avif'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.filter-btn{
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-color);
+  color: var(--accent-color);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+#starters {
+  background-image: url('../images/namnlos-design-5-1366x910.webp');
+  color: var(--accent-color);
+  /* background-size: cover;
+  background-position: center; */
+}
+
+#mains {
+  background-image: url('../images/nabo-matbar-din-goda.jpg');
+  color:var(--accent-color);
+}
+
+#desserts{
+  background-image: url('../images/inkokt-rabarber-kostekonom.se_.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-category {
+  /* background-image: url('../images/inkokt-rabarber-kostekonom.se_.jpg'); */
+  opacity: 80%;
+  /* background: #ebeef1; */
+  border-radius: 8px;
+  padding: 4rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.menu-category ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+.menu-category li {
+  margin-bottom: 10px;
+}
+
+/* LUNCH PAGE */
+.lunch-page {
+  background-image: url('../images/d4c5a0f53a97aaf0ada1f42b2937208c_1710496999.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+#showHideInfo{
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-color);
+  color: var(--accent-color);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.lunch-buffet {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap:1rem; 
+  list-style:none;
+  padding: 2rem;
+  /* margin-bottom: 1.5rem; */
+}
+
+#lunch-info {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#lunch-info p {
+  margin-bottom: 1rem; /* Justera värdet efter önskemål */
+}
+
+#lunch-info ul{
+  list-style:none;
+}
+
+/* PRICE PAGE */
+
+.price-page {
+  background-image: url('../images/holiday-table-1926946_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+#table-head,
+#table-head th{
+  background-color: #8791aa;
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #f4f4f4;
+  font-weight: 600;
+}
+
+tbody tr:hover {
+  background: rgba(0,0,0,0.03);
+}
+
+/* UTILITIES */
+.hidden { display: none; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--accent-color);
-  }
-  
-  #home::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: var(--bg-overlay);
-  }
-  
-  #home h1 {
-    font-family: var(--font-heading);
-    font-size: 4rem;
-    z-index: 1;
-  }
-  
-  #home p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    z-index: 1;
-  }
-  
-  /* MENU GRID */
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 4rem 2rem;
-  }
-  
-  /* SECTIONS */
-  section {
-    padding: 6rem 2rem;
-  }
-  
-  section h2 {
-    text-align: center;
-    font-family: var(--font-heading);
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  /* BUTTON */
-  button {
-    background: var(--primary-color);
-    color: var(--accent-color);
-    border: none;
-    padding: 0.75rem 1.5rem;
-    cursor: pointer;
-    transition: opacity 0.2s;
-  }
-  
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  /* HIDDEN CLASS */
-  .hidden {
-    display: none;
-  }
-  
- 
-
-  /* MENU PAGE */
-
-  .page-menu {
-    background: #fafafa;
-  }
-
-  
-main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-  }
-  
-  h1 {
-    font-family: var(--font-heading);
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .menu-category {
-    background: #fafafa;
-    border-radius: 8px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  
-  .menu-category h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .menu-category ul {
-    list-style: none;
-  }
-  
-  .menu-category li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .menu-category li:last-child {
-    border-bottom: none;
-  }
-
-  /* LUNCHBUFFÉ */
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
     text-align: center;
   }
-  
-  main h1 {
-    font-family: var(--font-heading);
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
-  
-  #toggle-lunch {
-    margin-bottom: 1.5rem;
-  }
-  
-  #lunch-info {
-    background: #fafafa;
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  
-  /* Dölj som standard */
-  .hidden {
-    display: none;
-  }
-
-  
-  /* PRICE LIST */
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-  }
-  
-  .table-container {
-    overflow-x: auto;
-  }
-  
-  table {
+  .section img,
+  .section .content {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 2rem;
   }
-  
-  th, td {
-    padding: 1rem;
-    border-bottom: 1px solid #eee;
-    text-align: left;
+  #home h1 {
+    font-size: 3rem;
   }
-  
-  th {
-    background: #f4f4f4;
-    font-weight: 600;
-  }
-  
-  tbody tr:hover {
-    background: rgba(0,0,0,0.03);
-  }
-  
-  
-   /* RESPONSIVE TYPOGRAPHY */
-   @media (max-width: 768px) {
-    #home h1 {
-      font-size: 3rem;
-    }
-  
-    section {
-      padding: 4rem 1rem;
-    }
-  }
+}
