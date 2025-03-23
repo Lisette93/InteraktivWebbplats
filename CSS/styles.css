@@ -138,7 +138,7 @@ main {
 }
 
 .filter-btn{
-  display: inline-block;
+  /* display: inline-block; */
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0.75rem 1.5rem;
@@ -161,7 +161,7 @@ main {
 }
 
 #desserts{
-  background-image: url('../images/inkokt-rabarber-kostekonom.se_.jpg');
+  background-image: url('../images/istockphoto-492936052-2048x2048.webp');
   background-size: cover;
   background-position: center;
 }
@@ -222,12 +222,14 @@ main {
 }
 
 #lunch-info p {
-  margin-bottom: 1rem; /* Justera värdet efter önskemål */
+  margin-bottom: 1rem;
 }
 
 #lunch-info ul{
   list-style:none;
 }
+
+.hidden { display: none; }
 
 /* PRICE PAGE */
 
@@ -236,6 +238,8 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
 .table-container {
   overflow-x: auto;
 }
@@ -265,8 +269,8 @@ tbody tr:hover {
   background: rgba(0,0,0,0.03);
 }
 
-/* UTILITIES */
-.hidden { display: none; }
+
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
