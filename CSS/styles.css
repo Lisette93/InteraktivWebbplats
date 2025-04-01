@@ -88,7 +88,7 @@ nav a:hover,
   z-index: 1;
 }
 
-/* SPLIT SECTION (preview blocks) */
+/* SECTION */
 .section {
   display: flex;
   align-items: center;
@@ -120,7 +120,7 @@ nav a:hover,
   border-radius: 4px;
 }
 
-/* GENERIC MAIN */
+/* MAIN */
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -158,21 +158,19 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #d9a441; /* valfri accentfärg */
+  color: #d9a441; 
 }
 
 
 /* MENU PAGE */
 
 .menu-page {
-  /* background-image: url('../images/d4c5a0f53a97aaf0ada1f42b2937208c_1710496999.avif'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .filter-btn{
-  /* display: inline-block; */
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0.75rem 1.5rem;
@@ -185,8 +183,6 @@ footer {
 #starters {
   background-image: url('../images/namnlos-design-5-1366x910.webp');
   color: var(--accent-color);
-  /* background-size: cover;
-  background-position: center; */
 }
 
 #mains {
@@ -202,9 +198,6 @@ footer {
 }
 
 .menu-category {
-  /* background-image: url('../images/inkokt-rabarber-kostekonom.se_.jpg'); */
-  opacity: 80%;
-  /* background: #ebeef1; */
   border-radius: 8px;
   padding: 4rem;
   margin-bottom: 2rem;
@@ -269,6 +262,7 @@ footer {
 
 .hidden { display: none; }
 
+
 /* PRICE PAGE */
 
 .price-page {
@@ -312,7 +306,7 @@ tbody tr:hover {
 }
 
 #total-price.flash {
-  color: #27ae60; /* grön */
+  color: #27ae60;
   transform: scale(1.05);
 }
 
