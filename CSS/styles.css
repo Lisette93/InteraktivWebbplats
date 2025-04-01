@@ -66,7 +66,7 @@ nav a:hover,
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap:20rem;
+  gap:5rem;
   color: var(--accent-color);
 }
 
@@ -128,6 +128,40 @@ main {
   text-align: center;
 }
 
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #d9a441; /* valfri accentfärg */
+}
+
+
 /* MENU PAGE */
 
 .menu-page {
@@ -161,7 +195,8 @@ main {
 }
 
 #desserts{
-  background-image: url('../images/istockphoto-492936052-2048x2048.webp');
+  background-image: url('../images/nougat-3078581_1280.jpg');
+  color:var(--accent-color);
   background-size: cover;
   background-position: center;
 }
@@ -188,10 +223,10 @@ main {
 
 /* LUNCH PAGE */
 .lunch-page {
-  background-image: url('../images/d4c5a0f53a97aaf0ada1f42b2937208c_1710496999.avif');
+  background-image: url('../images/656c6a0b9fe0c222048e253cd6aa3d99.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
+  background-position: center;
 }
 
 #showHideInfo{
@@ -203,15 +238,18 @@ main {
 }
 
 .lunch-buffet {
+  
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  height: 75vh;
   gap:1rem; 
   list-style:none;
-  padding: 2rem;
-  /* margin-bottom: 1.5rem; */
+  padding: 5px;
 }
 
 #lunch-info {
@@ -238,7 +276,6 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .table-container {
   overflow-x: auto;
@@ -269,6 +306,16 @@ tbody tr:hover {
   background: rgba(0,0,0,0.03);
 }
 
+#total-price {
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+#total-price.flash {
+  color: #27ae60; /* grön */
+  transform: scale(1.05);
+}
+
 
 
 
@@ -278,11 +325,19 @@ tbody tr:hover {
     flex-direction: column;
     text-align: center;
   }
+
   .section img,
   .section .content {
     width: 100%;
   }
+
   #home h1 {
     font-size: 3rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
 }
